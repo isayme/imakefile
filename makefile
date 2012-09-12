@@ -25,7 +25,7 @@ SOFLAGS := -g -DLINUX -shared -fPIC -Iinc
 
 LDFLAGS := -Wl,-rpath,bin,-rpath, \
   -Lbin \
-	-lpthread -lreadline
+	-lpthread
 	
 # vpath indicate the searching path of the according file type
 SRCDIR := src $(shell ls -d src/*)
