@@ -52,7 +52,7 @@ clean :
 		
 # common rules goes here, if the compiling procedure of your module matches one, 
 # no need to list it in SpecialRules
-%.so : %.c
+lib%.so : %.c
 	$(CC) $(SOFLAGS) -o $@ $^
 	mv $@ bin/
 
@@ -63,7 +63,7 @@ clean :
 #-----------------------------------------------------------
 # for special libs/bins, add some lines like below
 #-----------------------------------------------------------
-#so_example.so: so_example.c so_prerequisite1.c so_prerequisite2.c
+#libso_example.so: so_example.c so_prerequisite1.c so_prerequisite2.c
 #	$(CC) $(SOFLAGS) -o $@ $^
 #	mv $@ bin/
 
