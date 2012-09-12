@@ -7,7 +7,7 @@
 # to use this makefile, generally change variables below
 #-----------------------------------------------------------
 # binarys to be created
-BINS := 
+BINS := test
 
 # libs to be created
 LIBS := 
