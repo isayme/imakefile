@@ -57,7 +57,7 @@ lib%.so : %.c
 	mv $@ bin/
 
 % : %.c
-	$(CC) $(CCFLAGS) $(LDFLAGS) -o $@ $^
+	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $^
 	mv $@ bin/
 		
 #-----------------------------------------------------------
@@ -68,7 +68,7 @@ lib%.so : %.c
 #	mv $@ bin/
 
 #bin_example : bin_example.c bin_prerequisite1.c bin_prerequisite2.c
-#	$(CC) $(CCFLAGS) $(LDFLAGS) -o $@ $^
+#	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $^
 #	mv $@ bin/
 #-----------------------------------------------------------
 
